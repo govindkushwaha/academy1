@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <title>Eternal Music Academy</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!--    all animate-->
+	  <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+<!--    all animate-->
+	  <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+<!--    all animate-->
+	  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+	  <link rel="stylesheet" href="{% static 'css/ddd.css' %}">
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+	  <script>
+$(document).ready(function(){
+	$("#myModal").modal('show');
+});
+</script>
+  </head>
+  <body style="background-color: #FFBF00; overflow-x: hidden;">
+    <nav class="navbar navbar-expand-lg navbar-dark  ftco_navbar ftco-navbar-light" id="ftco-navbar">
+	    <div class="container d-flex align-items-center">
+	    	<a class="navbar-brand" href="index.html">Eternal Music Academy</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu">Menu</span>
+	      </button>
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	        	<li class="nav-item" ><a href="#index" class="nav-link pl-0"><b>Home</b></a></li>
+				<li class="nav-item"><a href="#Courses" class="nav-link"><b>Courses</b></a></li>
+	        	<li class="nav-item"><a href="#Teachers" class="nav-link"><b>Teacher</b></a></li>
+				<li class="nav-item"><a href="#gallery" class="nav-link"><b>Gallery</b></a></li>
+	        	<li class="nav-item"><a href="#Blog" class="nav-link"><b>Blog</b></a></li>
+				<li class="nav-item"><a href="#abouts" class="nav-link"><b>About Us</b></a></li>
+	          <li class="nav-item"><a href="#contact" class="nav-link"><b>Contact</b></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+	<!-- Models-->
+	<div id="myModal" class="modal fade">
+   <div class="modal-dialog">
+      <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+       </div>
+			        <div class="modal-content">
+<div class="modal-body">
+					<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+ 					<div class="carousel-inner">
+						<div class="carousel-item active">
+						  <img src="{% static 'images/boys.jpg' %}" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+						  <img src="{% static 'images/harmonium.jpg' %}" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+						  <img src="{% static 'images/singing.jpg' %}" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+						  <img src="{% static 'images/guitar_boys.jpg' %}" class="d-block w-100" alt="...">
+						</div>
+					  </div>
+					  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					  </a>
+					  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					  </a>
+			</div>
+           </div>
+       </div>
+   </div>
+</div>
+<!-- Models -->
+    	<section class="home-slider owl-carousel">
+      <div class="slider-item" id="index" style="background-image:url({% static 'images/bg_8.jpg' %});">
+      	<div class="overlay"></div>
+        <div class="container">
+          <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+          <div class="col-md-8 text-center ftco-animate">
+            <h1 class="mb-4" >Eternal Music Academy "Be<span>More Than What You Are"</span></h1>
+            
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="slider-item" style="background-image:url({% static 'images/mainbg1.jpg' %});">
+      	<div class="overlay"></div>
+        <div class="container">
+          <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+          <div class="col-md-8 text-center ftco-animate">
+            <h1 class="mb-4">“The only truth is music.”<span>  ― Jack Kerouac</span></h1>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+		<section class="ftco-services ftco-no-pb" >
+			<div class="container-wrap" >
+				<div class="row no-gutters">
+          <div class="col-md-3 d-flex services align-self-stretch pb-4 px-4 ftco-animate" style="background-color:#712177;">
+            <div class="media block-6 d-block text-center">
+              <div class="icon d-flex justify-content-center align-items-center">
+            		<span class="flaticon-teacher"> 
+
+						<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+						width="100" height="100"
+						viewBox="0 0 172 172"
+						style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><path d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z" fill="#ffffff"></path><g fill="#000000"><path d="M69.55603,26.4536c-12.78295,0 -23.21199,10.42904 -23.21199,23.21199c0,11.47908 8.43138,21.03956 19.41778,22.86235l-0.49856,0.33021h-2.34386c-0.00216,0 -0.00432,0 -0.00647,0c-3.61772,0.00365 -7.09176,0.06733 -10.13299,1.8971l-33.14426,19.89044c-0.03049,0.01679 -0.0607,0.03406 -0.09065,0.0518l-0.58273,0.37553c-0.03721,0.02515 -0.07391,0.05105 -0.11007,0.0777c-3.71208,2.60285 -5.98939,7.06265 -5.62009,11.88117c0.53198,6.92011 6.3604,12.24376 13.2085,12.24376c0.34137,0 0.68666,-0.01259 1.02949,-0.03885l18.8739,-1.45034v31.32486c0.00018,1.83079 1.48428,3.31489 3.31507,3.31507h46.41103c1.83079,-0.00018 3.31489,-1.48428 3.31507,-3.31507v-30.44429l7.19345,6.67547c2.51946,2.48631 5.83479,3.87838 9.38192,3.87838c0.86192,0 1.72151,-0.09971 2.58343,-0.26546c4.34275,-0.86192 7.95747,-3.81104 9.61501,-7.78913l19.92281,-43.19955c1.65763,-3.97832 1.18304,-8.27362 -0.82229,-11.73225h5.16685c0,3.62358 3.00656,6.63015 6.63015,6.63015c3.62358,0 6.63015,-3.00656 6.63015,-6.63015c0,-3.62358 -3.00656,-6.63015 -6.63015,-6.63015h-31.4932h-10.21068l-4.77189,6.63015h11.6675c0,0.0663 0.00078,0.13442 -0.03238,0.20072c0,0 0.03315,0.03237 0,0.03237c-0.1989,0.36466 -0.36518,0.7288 -0.53093,1.12661l-0.89352,1.82588c-1.19343,1.75699 -3.08483,3.44457 -5.17333,3.44457h-9.8481l-4.80427,6.63015h14.65237c0.09945,0 0.23076,0.00078 0.33021,-0.03238l-6.5654,13.65526l-11.29844,-9.64738l-1.96185,2.68702l-1.95538,2.71939l14.16028,12.06894c0.79562,0.66301 1.82122,0.95723 2.84889,0.72517c0.99452,-0.1989 1.85463,-0.89196 2.28559,-1.78703l12.93008,-26.8508l1.32733,-2.71939c0.16575,-0.39781 0.396,-0.79432 0.62805,-1.15898l0.03237,-0.03885c0.69617,-1.06082 1.72591,-1.88545 2.95249,-2.38271c1.62439,-0.66301 3.44535,-0.66301 5.06973,0c3.38137,1.42548 4.97209,5.30438 3.61291,8.55315l-19.92282,43.22545c-0.86192,2.05535 -2.68184,3.51864 -4.83664,3.9496c-2.18795,0.43096 -4.40931,-0.26624 -6.06684,-1.89063l-12.42505,-11.50564c-0.84405,-1.17596 -2.35345,-1.66839 -3.7286,-1.21643c-1.37515,0.45196 -2.29812,1.74382 -2.27997,3.19123v34.75647h-39.78088v-28.52129l17.5919,-1.35322c7.26264,-0.55832 12.76322,-6.97551 12.20491,-14.23798c-0.11899,-1.54779 -0.55023,-2.99271 -1.15251,-4.33808l13.95957,-18.86096c0.2031,-0.21132 0.37727,-0.44864 0.51798,-0.70575l29.16229,-39.40535c0.75866,-0.99202 0.8955,-2.32619 0.35401,-3.45156c-0.54149,-1.12537 -1.66943,-1.85097 -2.91802,-1.87716c-1.09481,-0.02619 -2.13193,0.48995 -2.7712,1.37912l-18.63434,25.18031h-10.80636c1.44311,-3.01882 2.27264,-6.38154 2.27264,-9.93875c0,-12.78295 -10.42719,-23.21199 -23.19904,-23.21199zM69.55603,33.08375c9.1872,0 16.56889,7.37922 16.56889,16.58184c0,9.1872 -7.3817,16.56889 -16.56889,16.56889c-9.20262,0 -16.58184,-7.3817 -16.58184,-16.56889c0,-9.20262 7.37922,-16.58184 16.58184,-16.58184zM87.12203,66.23449h9.26537l-4.90786,6.63015h-11.98477h-2.31796zM62.91941,79.48831h3.2827c0.0113,0.00012 0.02106,0.00647 0.03238,0.00647l0.44028,-0.00647l12.82001,0.00647h7.07691l-9.27832,12.5416c-2.4648,-1.79501 -5.51272,-2.80826 -8.76034,-2.55753l-18.29118,1.40502c-1.18962,0.08018 -2.24457,0.79297 -2.76286,1.86675c-0.51828,1.07379 -0.42006,2.34317 0.25723,3.32445c0.67729,0.98128 1.82934,1.5233 3.01713,1.41952l18.2847,-1.40502c0.00216,0 0.00432,0 0.00647,0c3.65851,-0.28244 6.83276,2.41813 7.11576,6.09922c0.2837,3.69053 -2.40885,6.83853 -6.09922,7.12223c-0.00216,0 -0.00432,0 -0.00647,0l-43.09596,3.31507c-0.17432,0.01341 -0.34883,0.01942 -0.51798,0.01942c-3.44189,0 -6.3275,-2.6029 -6.59777,-6.11864c-0.18737,-2.44478 0.95727,-4.64088 2.81004,-5.94382l0.00648,-0.00647l0.42733,-0.27194l33.10541,-19.86454c0.00216,0 0.00432,0 0.00647,0c0.15421,-0.09272 3.71018,-0.94718 6.72079,-0.95179z"></path></g></g></svg>
+
+					</span> </div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">Music Classes</h3>
+                <p>“Music gives a soul to the universe, wings to the mind, flight to the imagination and life to everything.” ― Plato</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex services align-self-stretch pb-4 px-4 ftco-animate" style="background-color:#4b830d;">
+            <div class="media block-6 d-block text-center">
+              <div class="icon d-flex justify-content-center align-items-center">
+            		<span class="flaticon-reading">
+
+						<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+						width="100" height="100"
+						viewBox="0 0 172 172"
+						style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><path d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z" fill="#ffffff"></path><g fill="#000000"><path d="M90.5925,15.5832c-7.57028,0 -13.7772,6.20692 -13.7772,13.7772c0,7.57028 6.20692,13.7772 13.7772,13.7772c7.57028,0 13.7772,-6.20692 13.7772,-13.7772c0,-7.57028 -6.20692,-13.7772 -13.7772,-13.7772zM90.5925,21.7064c4.25754,0 7.654,3.39646 7.654,7.654c0,4.25754 -3.39646,7.654 -7.654,7.654c-4.25754,0 -7.654,-3.39646 -7.654,-7.654c0,-4.25754 3.39646,-7.654 7.654,-7.654zM66.0997,37.0144c-7.57028,0 -13.7772,6.20692 -13.7772,13.7772c0,7.57028 6.20692,13.7772 13.7772,13.7772c7.57028,0 13.7772,-6.20692 13.7772,-13.7772c0,-7.57028 -6.20692,-13.7772 -13.7772,-13.7772zM66.0997,43.1376c4.25754,0 7.654,3.39646 7.654,7.654c0,4.25754 -3.39646,7.654 -7.654,7.654c-4.25754,0 -7.654,-3.39646 -7.654,-7.654c0,-4.25754 3.39646,-7.654 7.654,-7.654zM113.31531,43.29307c-0.66973,0.01196 -1.33945,0.09567 -2.04505,0.27507l-23.16531,4.60436c-0.14351,0.03588 -0.27507,0.07176 -0.41858,0.1196c-2.75065,0.95675 -4.89138,3.18119 -5.75246,5.96773c-0.03588,0.09567 -0.0598,0.20331 -0.08372,0.29898l-1.78195,8.81406l-12.22248,5.83617c-0.07176,0.03588 -0.13155,0.0598 -0.20331,0.09567c-1.36337,0.78932 -2.51147,1.9135 -3.31275,3.25295c-0.01196,0 -0.01196,0.01196 -0.01196,0.01196l-9.1848,15.37976l-9.55554,4.95118l0.27507,-0.11959c-4.67612,1.87762 -6.99623,7.25934 -5.11861,11.93545c1.42317,3.5639 4.86747,5.77638 8.52703,5.77638c1.13614,0 2.2962,-0.21527 3.39646,-0.65777c0.08372,-0.02392 0.16743,-0.0598 0.23919,-0.10763l12.2464,-6.1232c1.75803,-0.71756 3.32471,-1.5308 4.07815,-3.97051l-0.28702,0.65777l7.06799,-11.85174l3.36058,4.5326c-0.02392,0.20331 0.02392,0.09567 -0.10763,0.62189c-0.27507,1.13614 -0.88499,2.95397 -2.2364,5.3578c-2.70282,4.78375 -8.39548,11.93545 -20.35485,20.53425c-15.308,11.00262 -29.15696,12.44971 -29.15696,12.44971c-1.55472,0.16743 -2.7387,1.48296 -2.7387,3.04964c0,0 -0.01196,3.92267 2.17661,8.08454c2.20053,4.16186 6.8886,8.70643 15.09273,10.01c6.6255,1.06439 10.87107,-1.01655 13.05964,-2.30816c2.09289,1.79391 7.12779,5.64482 15.59502,5.64482c7.88123,0 12.59322,-3.26491 15.05685,-5.25017c0.6458,0.71756 0.50229,0.93283 1.61452,1.67431c2.82241,1.87762 7.30718,3.57585 13.94463,3.57585c6.63745,0 11.12222,-1.69823 13.94463,-3.57585c1.26769,-0.84911 1.18398,-1.12418 1.84174,-1.9135c0.55013,0.31095 0.46642,0.39466 1.23182,0.69365c2.32012,0.89695 5.77638,1.73411 10.53621,1.73411c6.72117,0 11.43316,-2.71478 14.24362,-5.46543c2.81045,-2.75066 3.93463,-5.70462 3.93463,-5.70462c0.4425,-1.18398 0.10763,-2.52343 -0.83715,-3.37255c-6.32651,-5.6209 -12.12681,-11.56472 -17.3411,-17.40089v-8.70642c0,-1.82978 -0.33486,-3.64761 -0.96871,-5.36976c-0.01196,-0.02392 -0.02392,-0.04784 -0.03588,-0.08372l-7.5942,-18.65663v-0.01196c-0.57405,-1.55472 -0.7056,-3.21707 -0.40662,-4.84355c1.60255,1.38729 3.67153,2.26032 5.94381,2.26032h1.1481c2.32012,0 4.35321,-0.51425 5.88401,-1.65039c1.5308,-1.13614 2.34404,-2.59519 2.97788,-3.86288c1.06439,-2.12877 2.24836,-5.51327 3.28883,-8.56291c0.66972,-1.9733 0.87303,-2.64302 1.19594,-3.65957c0.27507,-0.60993 0.5023,-1.23181 0.63385,-1.88958c0,-0.01196 0.03588,-0.1196 0.03588,-0.1196l-0.02392,-0.01196c0.10763,-0.53817 0.16743,-1.10026 0.16743,-1.67431c0,-5.0349 -4.1499,-9.1848 -9.1848,-9.1848c-0.15547,0 -0.31094,0.01196 -0.46642,0.03588l-3.28883,0.50229c-0.39466,-0.55013 -1.41121,-1.98525 -2.89417,-4.06619c-0.87303,-1.21985 -1.75803,-2.46363 -2.47559,-3.45626c-0.71756,-1.00459 -1.13614,-1.5906 -1.49492,-2.05701c-1.61452,-2.00918 -3.73132,-2.51147 -5.53719,-2.81045c-0.89695,-0.14351 -1.68627,-0.23919 -2.45167,-0.23919zM112.7293,49.51195c-0.35878,0.10764 1.05243,-0.09567 2.06897,0.07176c1.02851,0.16743 1.79391,0.68168 1.72215,0.58601c-0.04784,-0.0598 0.59797,0.81324 1.30357,1.80587c0.71756,0.98067 1.5906,2.22444 2.46363,3.4443c0.56209,0.78932 0.60993,0.84912 1.11222,1.54276l-9.61534,1.48296h-18.13041c-0.07175,0 -0.14351,0 -0.22723,0c-2.1766,0.16743 -4.34125,0.62189 -6.43414,1.57864l0.81324,-3.97051c0.28702,-0.92087 0.98067,-1.61452 1.86566,-1.94938l22.79457,-4.52064c0.08372,-0.02392 0.17939,-0.04784 0.26311,-0.07176zM131.9839,61.53112c1.69823,0.03588 3.0018,1.33945 3.0018,3.03768c0,0.23919 -0.08372,0.45446 -0.13155,0.66972c-0.03588,0.10763 -0.19135,0.57405 -0.25115,0.75344c-0.50229,0.96871 -1.471,1.63843 -2.6789,1.63843c-0.15547,0 -0.31094,0.01196 -0.46642,0.03588l-19.67317,3.02572h-15.45151c-0.89695,0 -1.74607,0.39466 -2.33208,1.07635c-0.57405,0.68168 -0.83715,1.5906 -0.68168,2.47559l1.66235,10.35682c-1.74607,1.68627 -4.47281,2.93005 -7.06799,3.59977c-1.55472,0.40662 -2.93005,0.60993 -3.92268,0.71756l-5.82422,-7.80947c-0.60993,-0.81324 -1.5906,-1.27965 -2.60714,-1.21986c-1.02851,0.04784 -1.94938,0.60993 -2.47559,1.48296l-9.41203,15.77442c-0.11959,0.21527 -0.21527,0.43054 -0.28702,0.65777c0.3229,-1.02851 -0.11959,-0.02392 -0.74148,0.22723c-0.08372,0.03588 -0.16743,0.0598 -0.23919,0.10763l-12.06701,6.02753c-0.37074,0.14351 -0.72952,0.20331 -1.07635,0.20331c-1.2079,0 -2.356,-0.7056 -2.84633,-1.92546c-0.63385,-1.61452 0.09567,-3.33667 1.69823,-3.97051c0.09568,-0.04784 0.19135,-0.08372 0.28702,-0.13155l10.3329,-5.3578c0.5023,-0.2631 0.92087,-0.65777 1.2079,-1.1481l9.6273,-16.12124c0.27506,-0.45445 0.6458,-0.81324 1.10026,-1.06438l17.68791,-8.44332c0.09567,-0.04784 0.19135,-0.09568 0.27507,-0.15547c1.60256,-0.96871 3.08552,-1.32749 5.21429,-1.48296h18.17825c0.15547,0 0.31095,-0.01196 0.46642,-0.03588zM131.9241,73.78948c-0.62189,1.68627 -1.2079,3.19315 -1.5906,3.94659c-0.51425,1.02851 -0.84912,1.48296 -1.13614,1.68627c-0.28703,0.20331 -0.74148,0.45445 -2.24836,0.45445h-1.1481c-1.73411,0 -3.0616,-1.32749 -3.0616,-3.0616v-1.61452zM115.75502,76.27703l-1.62648,4.93922c-0.01196,0.04784 -0.02392,0.10763 -0.04784,0.15547c-0.8252,3.09748 -0.68168,6.37435 0.4425,9.36419c0.01196,0.03588 0.02392,0.0598 0.03588,0.08372l7.63008,18.7523l-0.03588,-0.08372c0.3827,1.02851 0.58601,2.12877 0.58601,3.21707v1.5308c-13.20315,-15.90597 -21.3116,-29.31243 -21.57471,-29.76688l-1.24377,-7.654h12.10289c0.15547,0 0.31095,-0.01196 0.46642,-0.03588zM97.67245,90.42497c4.62828,7.28326 20.05587,30.47249 42.58733,51.07849c-0.35878,0.64581 -0.34682,0.94479 -1.43512,2.00918c-1.87762,1.84175 -4.81963,3.71937 -9.96216,3.71937c-4.05423,0 -6.70921,-0.69364 -8.31177,-1.32749c-1.60255,-0.62189 -1.88958,-0.95675 -1.88958,-0.95675c-0.71756,-0.63385 -1.68627,-0.89695 -2.6191,-0.71756c-0.93283,0.17939 -1.73411,0.77736 -2.16465,1.62647c0,0 -0.25115,0.7056 -2.02113,1.88958c-1.76999,1.18398 -4.93922,2.54735 -10.54817,2.54735c-5.60895,0 -8.77818,-1.36337 -10.54817,-2.54735c-1.76999,-1.18398 -2.02114,-1.88958 -2.02114,-1.88958c-0.4425,-0.87303 -1.27965,-1.49492 -2.24836,-1.65039c-0.96871,-0.15547 -1.96134,0.16743 -2.65498,0.86108c0,0 -5.32192,5.22625 -13.14335,5.22625c-7.82143,0 -13.14335,-5.22625 -13.14335,-5.22625c-1.07634,-1.0883 -2.79849,-1.19594 -4.01835,-0.27507c0,0 -4.23362,3.24099 -10.53621,2.2364c-6.49394,-1.04047 -9.14892,-4.03031 -10.61993,-6.81685c-0.84912,-1.5906 -0.69364,-2.00917 -0.84912,-2.97788c4.05423,-0.68168 15.00902,-2.91809 28.7025,-12.77261c12.53343,-9.00541 18.89581,-16.779 22.12485,-22.5195c1.61452,-2.85829 2.43971,-5.20233 2.84633,-6.90056c0.01196,-0.04784 0.01196,-0.07175 0.02392,-0.10763c1.17202,-0.15547 2.60714,-0.3827 4.22166,-0.80128c2.59518,-0.66973 5.62091,-1.74607 8.22805,-3.7074z"></path></g></g></svg>
+						
+					</span>
+              </div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">Dance Classes</h3>
+                <p>“Music gives a soul to the universe, wings to the mind, flight to the imagination and life to everything.” ― Plato</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex services align-self-stretch pb-4 px-4 ftco-animate bg-fifth">
+            <div class="media block-6 d-block text-center">
+              <div class="icon d-flex justify-content-center align-items-center">
+            		<span class="flaticon-books">
+			
+						<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+						width="100" height="100"
+						viewBox="0 0 172 172"
+						style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><path d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z" fill="#ffffff"></path><g fill="#000000"><path d="M114.33276,10.66712c-18.83131,0 -34.2632,15.19956 -34.63005,33.94527c-1.80976,2.84915 -25.81357,40.68297 -44.70602,59.57542l0.09783,0.09782c-0.25679,0.19565 -1.1739,0.73369 -1.76085,2.24998c-0.67255,1.7364 -0.13451,4.65891 1.76085,6.55427l4.40212,4.40212l-5.28255,5.28255c-5.40483,5.40483 -7.81377,11.53112 -7.63035,17.31503c0.18342,5.7839 2.77579,11.09091 6.74992,14.8694c7.93605,7.55698 21.80275,9.3056 32.0866,-0.97825l42.94518,-42.94518c8.35181,-8.35181 17.48622,-6.62764 23.0867,-1.1739c2.80024,2.72687 4.61,6.41976 4.6956,10.36945c0.0856,3.94969 -1.41846,8.26621 -5.77167,12.61943l-19.85848,19.85847c-1.29618,1.29618 -1.29618,3.39942 0,4.6956c1.29618,1.29618 3.39942,1.29618 4.6956,0l19.76065,-19.85847c5.40483,-5.40483 7.85046,-11.60449 7.72818,-17.41285c-0.12228,-5.80836 -2.71464,-11.13982 -6.6521,-14.96722c-3.93745,-3.8274 -9.37897,-6.18743 -15.16287,-6.2608c-5.7839,-0.07337 -11.84905,2.16438 -17.11937,7.4347l-42.94517,42.94518c-8.02165,8.02165 -17.2172,6.28526 -22.89105,0.88043c-2.83692,-2.70241 -4.67114,-6.38308 -4.79343,-10.27163c-0.12228,-3.88854 1.32064,-8.16839 5.67385,-12.5216l0.29348,-0.19565l4.98907,-4.98908l2.3478,2.24997c1.8709,1.8709 4.45104,2.58014 6.2608,2.05433c1.57743,-0.45244 2.1277,-1.49183 2.3478,-1.76085l0.19565,0.19565c18.41556,-18.42779 56.9097,-43.16528 59.77107,-44.9995c18.75795,-0.36684 33.94528,-15.78651 33.94528,-34.63005c0,-19.06365 -15.57863,-34.63005 -34.63005,-34.63005zM114.33276,17.31922c15.49304,0 27.97795,12.47269 27.97795,27.97795c0,6.19966 -1.99319,11.9102 -5.38038,16.53242l-39.13,-39.13c4.62223,-3.38719 10.33276,-5.38037 16.53242,-5.38037zM93.00691,27.19954l39.5213,39.42347c-4.87902,4.16979 -11.23765,6.6521 -18.19545,6.6521c-15.50526,0 -27.97795,-12.46046 -27.97795,-27.97795c0,-6.93335 2.50676,-13.2186 6.6521,-18.09762zM80.97443,54.39489c3.24045,11.8246 12.6072,21.19134 24.45625,24.35842c-12.75394,8.41295 -39.32565,26.47389 -54.3907,41.4778c-0.04891,-0.06114 -0.03669,-0.03669 -0.19565,-0.19565l-11.3477,-11.44553c15.30961,-15.3463 33.1749,-41.49003 41.4778,-54.19505zM80.48531,75.13379c-0.94156,0 -1.93204,0.36685 -2.64127,1.07608l-8.41295,8.51078c-1.43069,1.43069 -1.43069,3.75404 0,5.18473l0.29348,0.29347c1.41846,1.43069 3.75404,1.43069 5.18472,0l8.51078,-8.51077c1.43069,-1.41846 1.41846,-3.75404 0,-5.18473l-0.3913,-0.29348c-0.70923,-0.70923 -1.60189,-1.07608 -2.54345,-1.07608z"></path></g></g></svg>
+
+					
+					
+					</span>
+              </div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading"> Karaoke Classes </h3>
+                <p>“Music gives a soul to the universe, wings to the mind, flight to the imagination and life to everything.” ― Plato</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex services align-self-stretch pb-4 px-4 ftco-animate bg-quarternary">
+            <div class="media block-6 d-block text-center">
+              <div class="icon d-flex justify-content-center align-items-center">
+            		<span class="flaticon-diploma">
+
+						<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+						width="100" height="100"
+						viewBox="0 0 172 172"
+						style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><path d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z" fill="#ffffff"></path><g fill="#000000"><path d="M86.01575,24.1875c-15.46727,0 -27.58224,11.62807 -27.58224,26.4758v2.12171c0,4.68049 3.80635,8.48684 8.48684,8.48684h1.66173c0.92738,2.6837 2.16615,5.23571 3.69642,7.47157h-2.05541c-8.77964,0 -17.91877,4.67728 -24.4494,12.51063l-21.4243,25.70917c-1.10545,0.07433 -1.98496,0.96814 -1.98496,2.0927v29.70395c0,3.50931 2.85582,6.36513 6.36513,6.36513h114.57237c3.50931,0 6.36513,-2.85582 6.36513,-6.36513v-29.70395c0,-1.12649 -0.88096,-2.02528 -1.9891,-2.09685l-21.42016,-25.70502c-6.53063,-7.83336 -15.6739,-12.51063 -24.45354,-12.51063h-2.05541c1.53016,-2.23587 2.77322,-4.78785 3.70056,-7.47157h1.66173c4.68049,0 8.48684,-3.80635 8.48684,-8.48684v-2.12171c0,-14.84773 -12.11497,-26.4758 -27.58224,-26.4758zM86.01575,28.43092c11.26764,0 20.16198,6.86445 22.6302,16.66289c-1.07934,-0.49811 -2.26991,-0.79564 -3.5348,-0.79564h-1.05257c-2.67022,-6.92556 -9.53432,-11.62383 -18.04283,-11.62383c-8.50873,0 -15.37633,4.69797 -18.04697,11.62383h-1.04842c-1.26598,0 -2.45475,0.29672 -3.5348,0.79564c2.46898,-9.79648 11.36338,-16.66289 22.6302,-16.66289zM86.01575,36.91776c7.80324,0 13.84116,4.97554 14.85197,11.86417v4.88988c-1.07559,10.27302 -7.77765,19.31503 -14.85197,19.31503c-7.07432,0 -13.77609,-9.042 -14.85197,-19.31503v-4.88988c1.01083,-6.88863 7.04681,-11.86417 14.85197,-11.86417zM66.90792,48.54159c-0.09188,0.74981 -0.15333,1.51058 -0.15333,2.29161c0,0.97691 0.06711,1.96289 0.16576,2.9505v3.24473c-2.34025,0 -4.24342,-1.90317 -4.24342,-4.24342c0,-2.33603 1.89654,-4.23658 4.23099,-4.24342zM105.12357,48.54159c2.33235,0.00684 4.23099,1.90739 4.23099,4.24342c0,2.34025 -1.90317,4.24342 -4.24342,4.24342v-3.25302c0.0981,-0.98483 0.16576,-1.96804 0.16576,-2.94221c0,-0.78103 -0.06147,-1.54181 -0.15333,-2.29161zM70.22309,72.98684h5.75183c2.88765,2.61045 6.29718,4.24342 10.04083,4.24342c3.74293,0 7.1535,-1.63297 10.04083,-4.24342h5.75183c7.53419,0 15.45524,4.10707 21.1881,10.98565l19.13269,22.96172h-15.68905l-9.08772,-10.90692c-0.57498,-0.68531 -1.51782,-0.93733 -2.35377,-0.63817c-0.8402,0.30553 -1.39652,1.10213 -1.39652,1.99325v9.55184h-0.39367c-1.8374,0 -3.12531,1.39953 -4.06523,2.42008c-0.15276,0.16549 -0.29687,0.31962 -0.36053,0.38539l-10.91935,9.9248h-23.71177l-11.06024,-9.89165c-1.19877,-1.17331 -2.78073,-2.83862 -4.45476,-2.83862h-0.20305v-8.88466c0.00212,-0.88263 -0.54833,-1.67105 -1.3758,-1.98082c-0.8211,-0.31401 -1.75787,-0.08394 -2.34134,0.58016l-9.04213,10.28532h-15.77608l19.13683,-22.96172c5.73074,-6.87859 13.65602,-10.98565 21.1881,-10.98565zM117.84555,103.24608l3.07068,3.68813h-3.07068zM54.19009,103.67705v3.25716h-2.86348zM26.60785,111.17763h31.53558c0.09284,0.03514 0.20049,0.05216 0.29008,0.09117v-0.09117h0.20305c0.55801,0 13.2897,12.1874 13.2897,12.1874c0.39039,0.34796 0.8953,0.54286 1.41724,0.54286h25.34035c0.52831,0 1.03513,-0.19682 1.42553,-0.55115l11.59896,-10.54225c0.17398,-0.17398 0.36212,-0.37415 0.55944,-0.58844c0.28855,-0.31189 0.80758,-0.87657 1.09401,-1.04842h32.06186v27.58224c0,1.17118 -0.95053,2.12171 -2.12171,2.12171h-114.57237c-1.17118,0 -2.12171,-0.95053 -2.12171,-2.12171zM32.97298,128.15132c-1.17331,0 -2.12171,0.9484 -2.12171,2.12171v4.24342c0,1.17331 0.9484,2.12171 2.12171,2.12171c1.17331,0 2.12171,-0.9484 2.12171,-2.12171v-4.24342c0,-1.17331 -0.9484,-2.12171 -2.12171,-2.12171zM43.58154,128.15132c-1.17331,0 -2.12171,0.9484 -2.12171,2.12171v4.24342c0,1.17331 0.9484,2.12171 2.12171,2.12171c1.17331,0 2.12171,-0.9484 2.12171,-2.12171v-4.24342c0,-1.17331 -0.9484,-2.12171 -2.12171,-2.12171zM54.19009,128.15132c-1.17331,0 -2.12171,0.9484 -2.12171,2.12171v4.24342c0,1.17331 0.9484,2.12171 2.12171,2.12171c1.17331,0 2.12171,-0.9484 2.12171,-2.12171v-4.24342c0,-1.17331 -0.9484,-2.12171 -2.12171,-2.12171zM64.79864,128.15132c-1.17331,0 -2.12171,0.9484 -2.12171,2.12171v4.24342c0,1.17331 0.9484,2.12171 2.12171,2.12171c1.17331,0 2.12171,-0.9484 2.12171,-2.12171v-4.24342c0,-1.17331 -0.9484,-2.12171 -2.12171,-2.12171zM75.40719,128.15132c-1.17331,0 -2.12171,0.9484 -2.12171,2.12171v4.24342c0,1.17331 0.9484,2.12171 2.12171,2.12171c1.17331,0 2.12171,-0.9484 2.12171,-2.12171v-4.24342c0,-1.17331 -0.9484,-2.12171 -2.12171,-2.12171zM86.01575,128.15132c-1.17331,0 -2.12171,0.9484 -2.12171,2.12171v4.24342c0,1.17331 0.9484,2.12171 2.12171,2.12171c1.17331,0 2.12171,-0.9484 2.12171,-2.12171v-4.24342c0,-1.17331 -0.9484,-2.12171 -2.12171,-2.12171zM96.6243,128.15132c-1.17331,0 -2.12171,0.9484 -2.12171,2.12171v4.24342c0,1.17331 0.9484,2.12171 2.12171,2.12171c1.17331,0 2.12171,-0.9484 2.12171,-2.12171v-4.24342c0,-1.17331 -0.9484,-2.12171 -2.12171,-2.12171zM107.23285,128.15132c-1.17331,0 -2.12171,0.9484 -2.12171,2.12171v4.24342c0,1.17331 0.9484,2.12171 2.12171,2.12171c1.17331,0 2.12171,-0.9484 2.12171,-2.12171v-4.24342c0,-1.17331 -0.9484,-2.12171 -2.12171,-2.12171zM117.8414,128.15132c-1.17331,0 -2.12171,0.9484 -2.12171,2.12171v4.24342c0,1.17331 0.9484,2.12171 2.12171,2.12171c1.17331,0 2.12171,-0.9484 2.12171,-2.12171v-4.24342c0,-1.17331 -0.9484,-2.12171 -2.12171,-2.12171zM128.44996,128.15132c-1.17331,0 -2.12171,0.9484 -2.12171,2.12171v4.24342c0,1.17331 0.9484,2.12171 2.12171,2.12171c1.17331,0 2.12171,-0.9484 2.12171,-2.12171v-4.24342c0,-1.17331 -0.9484,-2.12171 -2.12171,-2.12171zM139.05851,128.15132c-1.17331,0 -2.12171,0.9484 -2.12171,2.12171v4.24342c0,1.17331 0.9484,2.12171 2.12171,2.12171c1.17331,0 2.12171,-0.9484 2.12171,-2.12171v-4.24342c0,-1.17331 -0.9484,-2.12171 -2.12171,-2.12171z"></path></g></g></svg>
+
+
+						</span>
+              </div>
+              <div class="media-body p-2 mt-3">
+                <h3 class="heading">Music Workshops/Meditations</h3>
+                <p>“Music gives a soul to the universe, wings to the mind, flight to the imagination and life to everything.” ― Plato</p>
+              </div>
+            </div>
+          </div>
+        </div>
+			</div>
+		</section>
+		<section class="ftco-section ftco-no-pb" style="border:double;" id="Courses">
+			<div class="container">
+				<div class="row justify-content-center mb-5 pb-2">
+          <div class="col-md-8 text-center heading-section ftco-animate">
+            <h2 class="mb-4"><span>Our Courses</span> </h2>
+            <p>“A man should hear a little music, read a little poetry, and see a fine picture every day of his life, in order that worldly cares may not obliterate the sense of the beautiful which God has implanted in the human soul.” ― Johann Wolfgang von Goethe</p>
+          </div>
+        </div>
+				<div class="row">
+					<div class="col-md-6 col-lg-3 ftco-animate">
+							<div class="staff" style="box-shadow:5px 10px 5px 5px green;">
+							<div class="img-wrap d-flex align-items-stretch" style="border:solid red 5px;">
+								<div class="img align-self-stretch" style=" background-image: url({% static 'images/guitars.jpg' %});"></div>
+							</div>
+							<div class="text pt-3 text-center" style="border:5px solid red; border-top:none;">
+								<h3> Singing  </h3>
+								<span class="position mb-2">1 Month-12 Months</span>
+								<div class="faded">
+									<p></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3 ftco-animate">
+						<div class="staff"  style="box-shadow:5px 10px 5px 5px green;">
+							<div class="img-wrap d-flex align-items-stretch" style="border:solid red 5px;">
+								<div class="img align-self-stretch" style="background-image: url({% static 'images/Violinflute.png' %});"></div>
+							</div>
+							<div class="text pt-3 text-center" style="border:5px solid red; border-top:none;">
+								<h3> Dance  </h3>
+								<span class="position mb-2"> 1 Month-12 Months</span>
+								<div class="faded">
+									<p></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3 ftco-animate">
+						<div class="staff" style="box-shadow:5px 10px 5px 5px green;">
+							<div class="img-wrap d-flex align-items-stretch" style="border:solid red 5px;">
+								<div class="img align-self-stretch" style="background-image: url({% static 'images/tabala.jpg' %});"></div>
+							</div>
+							<div class="text pt-3 text-center" style="border:5px solid red; border-top:none;">
+								<h3>Karaoke Course</h3>
+								<span class="position mb-2"> 1 Month-12 Months</span>
+								<div class="faded">
+									<p></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3 ftco-animate">
+						<div class="staff" style="box-shadow:5px 10px 5px 5px green;">
+							<div class="img-wrap d-flex align-items-stretch" style="border:solid red 5px;">
+								<div class="img align-self-stretch" style="background-image: url({% static 'images/djembe.jpg' %});"></div>
+							</div>
+							<div class="text pt-3 text-center" style="border:5px solid red; border-top:none;">
+								<h3>  Violin  </h3>
+								<span class="position mb-2">1-12 Months</span>
+								<div class="faded">
+									<p></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-lg-3 ftco-animate">
+							<div class="staff" style="box-shadow:5px 10px 5px 5px green;">
+							<div class="img-wrap d-flex align-items-stretch" style="border:solid red 5px;">
+								<div class="img align-self-stretch" style=" background-image: url({% static 'images/guitars.jpg' %});"></div>
+							</div>
+							<div class="text pt-3 text-center" style="border:5px solid red; border-top:none;">
+								<h3>Guitar</h3>
+								<span class="position mb-2">1 Month-12 Months</span>
+								<div class="faded">
+									<p></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3 ftco-animate">
+						<div class="staff"  style="box-shadow:5px 10px 5px 5px green;">
+							<div class="img-wrap d-flex align-items-stretch" style="border:solid red 5px;">
+								<div class="img align-self-stretch" style="background-image: url({% static 'images/Violinflute.png' %});"></div>
+							</div>
+							<div class="text pt-3 text-center" style="border:5px solid red; border-top:none;">
+								<h3>Flute</h3>
+								<span class="position mb-2"> 1 Month-12 Months</span>
+								<div class="faded">
+									<p></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3 ftco-animate">
+						<div class="staff" style="box-shadow:5px 10px 5px 5px green;">
+							<div class="img-wrap d-flex align-items-stretch" style="border:solid red 5px;">
+								<div class="img align-self-stretch" style="background-image: url({% static 'images/tabala.jpg' %});"></div>
+							</div>
+							<div class="text pt-3 text-center" style="border:5px solid red; border-top:none;">
+								<h3>Tabla</h3>
+								<span class="position mb-2"> 1 Month-12 Months</span>
+								<div class="faded">
+									<p></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3 ftco-animate">
+						<div class="staff" style="box-shadow:5px 10px 5px 5px green;">
+							<div class="img-wrap d-flex align-items-stretch" style="border:solid red 5px;">
+								<div class="img align-self-stretch" style="background-image: url({% static 'images/djembe.jpg' %});"></div>
+							</div>
+							<div class="text pt-3 text-center" style="border:5px solid red; border-top:none;">
+								<h3>Harmonium </h3>
+								<span class="position mb-2">1-12 Months</span>
+								<div class="faded">
+									<p></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-lg-3 ftco-animate">
+							<div class="staff" style="box-shadow:5px 10px 5px 5px green;">
+							<div class="img-wrap d-flex align-items-stretch" style="border:solid red 5px;">
+								<div class="img align-self-stretch" style=" background-image: url({% static 'images/guitars.jpg' %});"></div>
+							</div>
+							<div class="text pt-3 text-center" style="border:5px solid red; border-top:none;">
+								<h3>Sitar</h3>
+								<span class="position mb-2">1 Month-12 Months</span>
+								<div class="faded">
+									<p> </p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3 ftco-animate">
+						<div class="staff"  style="box-shadow:5px 10px 5px 5px green;">
+							<div class="img-wrap d-flex align-items-stretch" style="border:solid red 5px;">
+								<div class="img align-self-stretch" style="background-image: url({% static 'images/Violinflute.png' %});"></div>
+							</div>
+							<div class="text pt-3 text-center" style="border:5px solid red; border-top:none;">
+								<h3>Slide Guitar</h3>
+								<span class="position mb-2"> 1 Month-12 Months</span>
+								<div class="faded">
+									<p></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3 ftco-animate">
+						<div class="staff" style="box-shadow:5px 10px 5px 5px green;">
+							<div class="img-wrap d-flex align-items-stretch" style="border:solid red 5px;">
+								<div class="img align-self-stretch" style="background-image: url({% static 'images/tabala.jpg' %});"></div>
+							</div>
+							<div class="text pt-3 text-center" style="border:5px solid red; border-top:none;">
+								<h3>Keyboard/Synthisizer</h3>
+								<span class="position mb-2"> 1 Month-12 Months</span>
+								<div class="faded">
+									<p></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3 ftco-animate">
+						<div class="staff" style="box-shadow:5px 10px 5px 5px green;">
+							<div class="img-wrap d-flex align-items-stretch" style="border:solid red 5px;">
+								<div class="img align-self-stretch" style="background-image: url({% static 'images/djembe.jpg' %});"></div>
+							</div>
+							<div class="text pt-3 text-center" style="border:5px solid red; border-top:none;">
+								<h3>Djembe</h3>
+								<span class="position mb-2">1-12 Months</span>
+								<div class="faded">
+									<p></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		</section>
+		<section class="ftco-section ftco-no-pt ftc-no-pb" id="abouts" style="background:#a0fc5a;">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 order-md-last wrap-about py-5 wrap-about">
+						<div class="text px-4 ftco-animate">
+	          	<h2 class="mb-4">What We Offer </h2>
+							<p>We provide Music Classes for all Age Groups by experts.</p>
+								<p>Learning music brings out your creativity, relieves stress.</p>
+								<p>Discover the star within & make your life joyful.</p>
+							
+							</div>
+					</div>
+					<div class="col-md-6 wrap-about py-5 pr-md-4 ftco-animate">
+          	<h2 class="mb-4">Welcome to Eternal Music Academy </h2>
+						<p>Established in November 2012.</p>
+					<p>Have Well trained, qualified, and experienced teachers.</p>
+					<p>We provide quality music education and skills through a systematic and well-structured course curriculum.</p>
+					</div>
+					</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="ftco-section" id="Teachers">
+			<div class="container">
+				<div class="row justify-content-center mb-5 pb-2">
+          <div class="col-md-8 text-center heading-section ftco-animate">
+            <h2 class="mb-4"><span>Certified Teachers</span> </h2>
+            <p>“A man should hear a little music, read a little poetry, and see a fine picture every day of his life, in order that worldly cares may not obliterate the sense of the beautiful which God has implanted in the human soul.” ― Johann Wolfgang von Goethe</p>
+          </div>
+        </div>
+				<div class="row">
+					<div class="col-md-6 course d-lg-flex ftco-animate" >
+						<div class="img" style="border:5px solid #ff70a6; background-image: url({% static 'images/guitar.jpg' %});"></div>
+						<div class="text bg-light p-4" style="border:5px solid #ff70a6; border-left:none; box-shadow:1px 3px 10px 5px #ff70a6;">
+							<h3><a href="#">Guitar</a></h3>
+							<p class="subheading"><span>Duration:</span> 1 Month-12 Months</p>
+							<p>“A man should hear a little music, read a little poetry, and see a fine picture every day of his life, in order that worldly cares may not obliterate the sense of the beautiful which God has implanted in the human soul.” ― Johann Wolfgang von Goethe</p>
+						</div>
+					</div>
+					<div class="col-md-6 course d-lg-flex ftco-animate">
+						<div class="img" style="border:5px solid #ff70a6; background-image: url({% static 'images/djembe.jpg' %});"></div>
+						<div class="text bg-light p-4" style="border:5px solid #ff70a6; border-left:none;">
+							<h3><a href="#">Djembe</a></h3>
+							<p class="subheading"><span>Class time:</span> 9:00am - 10am</p>
+							<p>“When you make music or write or create, it’s really your job to have mind-blowing, irresponsible, condomless sex with whatever idea it is you’re writing about at the time. ” ― Lady Gaga</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="ftco-gallery ftco-no-pb"  id="gallery" style="background-color:#a0fc5a;">
+			<div class="row justify-content-center pb-2">
+          <div class="col-md-8 text-center heading-section ftco-animate">
+            <h2 class="mt-5"><span>Gallery</span></h2>
+		  </div>
+	 	<div class="thumbnail-slider">
+		<div class="thumbnail-container">
+			<div class="does">
+				<a class="gallery image-popup img d-flex align-items-center" href="{% static 'images/singing1.jpg' %}" style="background-image: url({% static 'images/singing1.jpg' %});">
+				</a>
+			</div>
+			<div class="does">
+				<a class="gallery image-popup img d-flex align-items-center" href="{% static 'images/boys.jpg' %}" style="background-image: url({% static 'images/boys.jpg' %});">
+				</a>
+			</div>
+			<div class="does">
+				<a class="gallery image-popup img d-flex align-items-center" href="{% static 'images/harmonium.jpg' %}" style="background-image: url({% static 'images/harmonium.jpg' %});">
+				</a>
+			</div>
+			<div class="does">
+				<a class="gallery image-popup img d-flex align-items-center" href="{% static 'images/guitar_boys.jpg' %}" style="background-image: url({% static 'images/guitar_boys.jpg' %});">
+				</a>
+			</div>
+			<div class="does">
+				<a class="gallery image-popup img d-flex align-items-center" href="{% static 'images/singing1.jpg' %}"  style="background-image: url({% static 'images/singing1.jpg' %});">
+				</a>
+			</div>
+			<div class="does">
+				<a class="gallery image-popup img d-flex align-items-center" href="{% static 'images/boys.jpg' %}" style="background-image: url({% static 'images/boys.jpg' %});">
+				</a>
+			</div>
+			<div class="does">
+				<a class="gallery image-popup img d-flex align-items-center" href="{% static 'images/singing1.jpg' %}" style="background-image: url({% static 'images/singing1.jpg' %});">
+				</a>
+			</div>
+			<div class="does">
+				<a class="gallery image-popup img d-flex align-items-center" href="{% static 'images/boys.jpg' %}" style="background-image: url({% static 'images/boys.jpg' %});">
+				</a>
+			</div>
+			<div class="does">
+				<a class="gallery image-popup img d-flex align-items-center" href="{% static 'images/harmonium.jpg' %}" style="background-image: url({% static 'images/harmonium.jpg' %});">
+				</a>
+			</div>
+			<div class="does">
+				<a class="gallery image-popup img d-flex align-items-center" href="{% static 'images/guitar_boys.jpg' %}" style="background-image: url({% static 'images/guitar_boys.jpg' %});">
+				</a>
+			</div>
+			<div class="does">
+				<a class="gallery image-popup img d-flex align-items-center" href="{% static 'images/singing1.jpg' %}"  style="background-image: url({% static 'images/singing1.jpg' %});">
+				</a>
+			</div>
+			<div class="does">
+				<a class="gallery image-popup img d-flex align-items-center" href="{% static 'images/boys.jpg' %}" style="background-image: url({% static 'images/boys.jpg' %});">
+				</a>
+			</div>
+		</div>
+
+	  <!-- controls slides -->
+	  <div class="control_s">
+	  </div>
+
+	</div>
+
+
+   </div>
+		</section>
+    	<section class="ftco-section testimony-section" style="background-color:#f7f825;">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center heading-section ftco-animate">
+            <h2 ><span>What Students Says About Us</span></h2>
+            </div>
+        </div>
+        <div class="row ftco-animate justify-content-center">
+          <div class="col-md-12">
+            <div class="carousel-testimony owl-carousel">
+              <div class="item">
+                <div class="testimony-wrap d-flex">
+                  <!-- <div class="user-img mr-4" style="background-image: url({% static 'images/teacher-1.jpg' %})">
+                  </div> -->
+                  <div class="text ml-2">
+                  	<span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                    <p>“I think music in itself is healing. It’s an explosive expression of humanity. It’s something we are all touched by. No matter what culture we’re from, everyone loves music.” ― Billy Joel.</p>
+                    <p class="name">Racky Henderson</p>
+                    <span class="position">Student</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap d-flex">
+                  <!-- <div class="user-img mr-4" style="background-image: url({% static 'images/teacher-2.jpg' %})">
+                  </div> -->
+                  <div class="text ml-2 ">
+                  	<span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                    <p>“I think music in itself is healing. It’s an explosive expression of humanity. It’s something we are all touched by. No matter what culture we’re from, everyone loves music.” ― Billy Joel.</p>
+                    <p class="name">Henry Dee</p>
+                    <span class="position">Student</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap d-flex">
+                  <!-- <div class="user-img mr-4" style="background-image: url({% static 'images/teacher-3.jpg' %})">
+                  </div> -->
+                  <div class="text ml-2 ">
+                  	<span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                    <p>“I think music in itself is healing. It’s an explosive expression of humanity. It’s something we are all touched by. No matter what culture we’re from, everyone loves music.” ― Billy Joel.</p>
+                    <p class="name">Mark Huff</p>
+                    <span class="position">Student</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap d-flex">
+                  <!-- <div class="user-img mr-4" style="background-image: url({% static 'images/teacher-4.jpg' %})">
+                  </div> -->
+                  <div class="text ml-2 ">
+                  	<span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                    <p>“I think music in itself is healing. It’s an explosive expression of humanity. It’s something we are all touched by. No matter what culture we’re from, everyone loves music.” ― Billy Joel.</p>
+                    <p class="name">Rodel Golez</p>
+                    <span class="position">Student</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap d-flex">
+                  <!-- <div class="user-img mr-4" style="background-image: url({% static 'images/teacher-1.jpg' %})">
+                  </div> -->
+                  <div class="text ml-2 ">
+                  	<span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                    <p>“I think music in itself is healing. It’s an explosive expression of humanity. It’s something we are all touched by. No matter what culture we’re from, everyone loves music.” ― Billy Joel.</p>
+                    <p class="name">Ken Bosh</p>
+                    <span class="position">Student</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    	</section>
+    	<section class="ftco-section ftco-consult ftco-no-pt ftco-no-pb" style="background-color:a0fc5a; background-image: url({% static 'images/Ravip.png' %});" data-stellar-background-ratio="0.5">
+    	<div class="container" >
+    		<div class="row justify-content-end">
+    			<div class="col-md-6 py-5 px-md-5" style="border:solid red 5px; background-color: #a0fc5a;">
+	          <div class="heading-section heading-section-white ftco-animate mb-5" >
+	            <h2 class="mb-4" style="color:blue;">Admission Enquiry</h2>
+	            <p style="color:black;">“I think music in itself is healing. It’s an explosive expression of humanity. It’s something we are all touched by. No matter what culture we’re from, everyone loves music.” ― Billy Joel.</p>
+	          </div>
+	          <form action="#" class="appointment-form ftco-animate" >
+	    				<div class="d-md-flex">
+		    				<div class="form-group">
+		    					<input type="text" class="form-control" placeholder="First Name">
+		    				</div>
+		    				<div class="form-group ml-md-4">
+		    					<input type="text" class="form-control" placeholder="Last Name">
+		    				</div>
+	    				</div>
+	    				<div class="d-md-flex">
+	    					<div class="form-group">
+		    					<div class="form-field">
+          					<div class="select-wrap">
+                      <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                      <select name="" id="#" class="form-control">
+                      	<option value="" style="background-color:blue;">Select Your Course</option>
+                        <option value="" style="background-color:blue;">Singing</option>
+                        <option value="" style="background-color:blue;">Flute</option>
+                        <option value="" style="background-color:blue;">Music</option>
+                        <option value="" style="background-color:blue;">Tabla</option>
+                        <option value="" style="background-color:blue;">Other Cousres</option>
+                      </select>
+                    </div>
+		              </div>
+		    				</div>
+	    					<div class="form-group ml-md-4">
+		    					<input type="text" class="form-control" placeholder="Phone">
+		    				</div>
+	    				</div>
+	    				<div class="d-md-flex">
+	    					<div class="form-group">
+		              <textarea name="" id="" cols="30" rows="2" class="form-control" placeholder="Message"></textarea>
+		            </div>
+		            <div class="form-group ml-md-4">
+		              <input type="submit" value="Submit" class="btn btn-secondary py-3 px-4">
+		            </div>
+	    				</div>
+	    			</form>
+    			</div>
+        </div>
+    	</div>
+    	</section>
+		<section class="ftco-section" id="Blog">
+			<div class="container" >
+				<div class="row justify-content-center mb-5 pb-2">
+          <div class="col-md-8 text-center heading-section ftco-animate">
+            <h2 class="mb-4"><span>Recent Blog</span> </h2>
+            </div>
+        </div>
+				<div class="row">
+          <div class="col-md-6 col-lg-4 ftco-animate">
+            <div class="blog-entry">
+              <a href="#" class="block-20 d-flex align-items-end" style="background-image: url({% static 'images/harmonium.jpg' %});">
+								<div class="meta-date text-center p-2">
+                  <span class="day">27</span>
+                  <span class="mos">January</span>
+                  <span class="yr">2019</span>
+                </div>
+              </a>
+              <div class="text bg-white p-4">
+                <h3 class="heading"><a href="#">Skills To Develop Your Child Memory</a></h3>
+                <p>“I think music in itself is healing. It’s an explosive expression of humanity. It’s something we are all touched by. No matter what culture we’re from, everyone loves music.” ― Billy Joel.</p>
+                <div class="d-flex align-items-center mt-4">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 ftco-animate">
+            <div class="blog-entry">
+              <a href="#" class="block-20 d-flex align-items-end" style="background-image: url({% static 'images/boys.jpg' %});">
+								<div class="meta-date text-center p-2">
+                  <span class="day">27</span>
+                  <span class="mos">January</span>
+                  <span class="yr">2019</span>
+                </div>
+              </a>
+              <div class="text bg-white p-4">
+                <h3 class="heading"><a href="#">Skills To Develop Your Child Memory</a></h3>
+                <p>“I think music in itself is healing. It’s an explosive expression of humanity. It’s something we are all touched by. No matter what culture we’re from, everyone loves music.” ― Billy Joel.</p>
+                <div class="d-flex align-items-center mt-4">
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 ftco-animate">
+            <div class="blog-entry">
+              <a href="#" class="block-20 d-flex align-items-end" style="background-image: url({% static 'images/guitar_boys.jpg' %});">
+								<div class="meta-date text-center p-2">
+                  <span class="day">27</span>
+                  <span class="mos">January</span>
+                  <span class="yr">2019</span>
+                </div>
+              </a>
+              <div class="text bg-white p-4">
+                <h3 class="heading"><a href="#">Skills To Develop Your Child Memory</a></h3>
+                <p>“I think music in itself is healing. It’s an explosive expression of humanity. It’s something we are all touched by. No matter what culture we’re from, everyone loves music.” ― Billy Joel.</p>
+                <div class="d-flex align-items-center mt-4">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+			</div>
+		</section>
+    	<footer class="ftco-footer ftco-bg-dark ftco-section" style="background-color:#a0fc5a; border:double black 5px;">
+      <div class="container" id="contact">
+        <div class="row mb-5">
+          <div class="col-md-6 col-lg-3">
+            <div class="ftco-footer-widget mb-5">
+            	<h2 class="ftco-heading-2" style="color: black; margin-bottom: 0%; ">Connect With Us</h2>
+            	<div class="block-23 mb-3">
+
+	            </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="ftco-footer-widget mb-5">
+              <h2 class="ftco-heading-2" style="color: black; margin-bottom: 0%; ">Location</h2>
+              <div class="block-21 mb-5 d-flex">
+               <div class="text">
+				<p style="color: black;">
+					Opp. Nyati Meadows, Kalyani Nagar Rd, Extension, Wadgaon Sheri, Pune, Maharashtra-411014
+					
+				</p>
+                   <div class="meta">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="ftco-footer-widget mb-5">
+            	<h2 class="ftco-heading-2 mb-0" style="color: black; margin-bottom: 0%; ">Map</h2>
+            	<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
+                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p style="color: black;">| All rights reserved |</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  		<!-- loader -->
+  		<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+	  <script src="{% static 'js/jquery.min.js' %}"></script>
+	  <script src="{% static 'js/jquery-migrate-3.0.1.min.js' %}"></script>
+	  <script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+	  <script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+	  <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+	  <script src="{% static 'js/aos.js' %}"></script>
+	  <script src="{% static 'js/scrollax.min.js' %}"></script>
+	  <script src="{% static 'js/main.js' %}"></script>
+	  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
+	  <!-- Include Multislider -->
+    <!-- Include Multislider -->
+	<script src="{% static 'js/dddd.js' %}"></script>
+    <!-- Initialize element with Multislider -->
+  </body>
+</html>
