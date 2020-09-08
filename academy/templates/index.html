@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 {% load static %}
+
 <html lang="en">
   <head>
     <title>Eternal Music Academy</title>
@@ -33,7 +34,8 @@ $(document).ready(function(){
 	        <ul class="navbar-nav ml-auto">
 	        	<li class="nav-item" ><a href="#index" class="nav-link pl-0"><b>Home</b></a></li>
 				<li class="nav-item"><a href="#Courses" class="nav-link"><b>Courses</b></a></li>
-	        	<li class="nav-item"><a href="#Teachers" class="nav-link"><b>Teacher</b></a></li>
+				<li class="nav-item"><a href="#Admission" class="nav-link"><b>Admission</b></a></li>
+	        	<li class="nav-item"><a href="#Testimony" class="nav-link"><b>Testimony</b></a></li>
 				<li class="nav-item"><a href="#gallery" class="nav-link"><b>Gallery</b></a></li>
 	        	<li class="nav-item"><a href="#Blog" class="nav-link"><b>Blog</b></a></li>
 				<li class="nav-item"><a href="#abouts" class="nav-link"><b>About Us</b></a></li>
@@ -138,7 +140,7 @@ $(document).ready(function(){
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Dance Classes</h3>
-                <p>“Music gives a soul to the universe, wings to the mind, flight to the imagination and life to everything.” ― Plato</p>
+                <p>"I dance because there’s no greater feeling in the world than moving a piece of music and letting the rest of the world disappear."</p>
               </div>
             </div>
           </div>
@@ -158,7 +160,7 @@ $(document).ready(function(){
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading"> Karaoke Classes </h3>
-                <p>“Music gives a soul to the universe, wings to the mind, flight to the imagination and life to everything.” ― Plato</p>
+                <p>“I often think in music. I live my daydreams in music. I see y life in terms of music” ― Albert Einstein</p>
               </div>
             </div>
           </div>
@@ -177,7 +179,7 @@ $(document).ready(function(){
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading">Music Workshops/Meditations</h3>
-                <p>“Music gives a soul to the universe, wings to the mind, flight to the imagination and life to everything.” ― Plato</p>
+                <p>“I would teach children music, physics and philosophy but most importantly; Music for the Patterns in music and all the arts are the keys to learning.” ― Plato</p>
               </div>
             </div>
           </div>
@@ -189,185 +191,33 @@ $(document).ready(function(){
 				<div class="row justify-content-center mb-5 pb-2">
           <div class="col-md-8 text-center heading-section ftco-animate">
             <h2 class="mb-4"><span>Our Courses</span> </h2>
-            <p>“A man should hear a little music, read a little poetry, and see a fine picture every day of his life, in order that worldly cares may not obliterate the sense of the beautiful which God has implanted in the human soul.” ― Johann Wolfgang von Goethe</p>
+            <p></p>
           </div>
         </div>
 				<div class="row">
+					{% for course in course %}
 					<div class="col-md-6 col-lg-3 ftco-animate">
 							<div class="staff" style="box-shadow:5px 10px 5px 5px green;">
 							<div class="img-wrap d-flex align-items-stretch" style="border:solid red 5px;">
-								<div class="img align-self-stretch" style=" background-image: url({% static 'images/guitars.jpg' %});"></div>
+								<div class="img align-self-stretch" style=" background-image: url({{ course.img.url }})"> </div>	
 							</div>
 							<div class="text pt-3 text-center" style="border:5px solid red; border-top:none;">
-								<h3> Singing  </h3>
-								<span class="position mb-2">1 Month-12 Months</span>
+								<h3> {{course.name}}  </h3>
+								<span class="position mb-2">{{ course.duration}}</span>
 								<div class="faded">
 									<p></p>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff"  style="box-shadow:5px 10px 5px 5px green;">
-							<div class="img-wrap d-flex align-items-stretch" style="border:solid red 5px;">
-								<div class="img align-self-stretch" style="background-image: url({% static 'images/Violinflute.png' %});"></div>
-							</div>
-							<div class="text pt-3 text-center" style="border:5px solid red; border-top:none;">
-								<h3> Dance  </h3>
-								<span class="position mb-2"> 1 Month-12 Months</span>
-								<div class="faded">
-									<p></p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff" style="box-shadow:5px 10px 5px 5px green;">
-							<div class="img-wrap d-flex align-items-stretch" style="border:solid red 5px;">
-								<div class="img align-self-stretch" style="background-image: url({% static 'images/tabala.jpg' %});"></div>
-							</div>
-							<div class="text pt-3 text-center" style="border:5px solid red; border-top:none;">
-								<h3>Karaoke Course</h3>
-								<span class="position mb-2"> 1 Month-12 Months</span>
-								<div class="faded">
-									<p></p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff" style="box-shadow:5px 10px 5px 5px green;">
-							<div class="img-wrap d-flex align-items-stretch" style="border:solid red 5px;">
-								<div class="img align-self-stretch" style="background-image: url({% static 'images/djembe.jpg' %});"></div>
-							</div>
-							<div class="text pt-3 text-center" style="border:5px solid red; border-top:none;">
-								<h3>  Violin  </h3>
-								<span class="position mb-2">1-12 Months</span>
-								<div class="faded">
-									<p></p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-6 col-lg-3 ftco-animate">
-							<div class="staff" style="box-shadow:5px 10px 5px 5px green;">
-							<div class="img-wrap d-flex align-items-stretch" style="border:solid red 5px;">
-								<div class="img align-self-stretch" style=" background-image: url({% static 'images/guitars.jpg' %});"></div>
-							</div>
-							<div class="text pt-3 text-center" style="border:5px solid red; border-top:none;">
-								<h3>Guitar</h3>
-								<span class="position mb-2">1 Month-12 Months</span>
-								<div class="faded">
-									<p></p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff"  style="box-shadow:5px 10px 5px 5px green;">
-							<div class="img-wrap d-flex align-items-stretch" style="border:solid red 5px;">
-								<div class="img align-self-stretch" style="background-image: url({% static 'images/Violinflute.png' %});"></div>
-							</div>
-							<div class="text pt-3 text-center" style="border:5px solid red; border-top:none;">
-								<h3>Flute</h3>
-								<span class="position mb-2"> 1 Month-12 Months</span>
-								<div class="faded">
-									<p></p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff" style="box-shadow:5px 10px 5px 5px green;">
-							<div class="img-wrap d-flex align-items-stretch" style="border:solid red 5px;">
-								<div class="img align-self-stretch" style="background-image: url({% static 'images/tabala.jpg' %});"></div>
-							</div>
-							<div class="text pt-3 text-center" style="border:5px solid red; border-top:none;">
-								<h3>Tabla</h3>
-								<span class="position mb-2"> 1 Month-12 Months</span>
-								<div class="faded">
-									<p></p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff" style="box-shadow:5px 10px 5px 5px green;">
-							<div class="img-wrap d-flex align-items-stretch" style="border:solid red 5px;">
-								<div class="img align-self-stretch" style="background-image: url({% static 'images/djembe.jpg' %});"></div>
-							</div>
-							<div class="text pt-3 text-center" style="border:5px solid red; border-top:none;">
-								<h3>Harmonium </h3>
-								<span class="position mb-2">1-12 Months</span>
-								<div class="faded">
-									<p></p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-6 col-lg-3 ftco-animate">
-							<div class="staff" style="box-shadow:5px 10px 5px 5px green;">
-							<div class="img-wrap d-flex align-items-stretch" style="border:solid red 5px;">
-								<div class="img align-self-stretch" style=" background-image: url({% static 'images/guitars.jpg' %});"></div>
-							</div>
-							<div class="text pt-3 text-center" style="border:5px solid red; border-top:none;">
-								<h3>Sitar</h3>
-								<span class="position mb-2">1 Month-12 Months</span>
-								<div class="faded">
-									<p> </p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff"  style="box-shadow:5px 10px 5px 5px green;">
-							<div class="img-wrap d-flex align-items-stretch" style="border:solid red 5px;">
-								<div class="img align-self-stretch" style="background-image: url({% static 'images/Violinflute.png' %});"></div>
-							</div>
-							<div class="text pt-3 text-center" style="border:5px solid red; border-top:none;">
-								<h3>Slide Guitar</h3>
-								<span class="position mb-2"> 1 Month-12 Months</span>
-								<div class="faded">
-									<p></p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff" style="box-shadow:5px 10px 5px 5px green;">
-							<div class="img-wrap d-flex align-items-stretch" style="border:solid red 5px;">
-								<div class="img align-self-stretch" style="background-image: url({% static 'images/tabala.jpg' %});"></div>
-							</div>
-							<div class="text pt-3 text-center" style="border:5px solid red; border-top:none;">
-								<h3>Keyboard/Synthisizer</h3>
-								<span class="position mb-2"> 1 Month-12 Months</span>
-								<div class="faded">
-									<p></p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff" style="box-shadow:5px 10px 5px 5px green;">
-							<div class="img-wrap d-flex align-items-stretch" style="border:solid red 5px;">
-								<div class="img align-self-stretch" style="background-image: url({% static 'images/djembe.jpg' %});"></div>
-							</div>
-							<div class="text pt-3 text-center" style="border:5px solid red; border-top:none;">
-								<h3>Djembe</h3>
-								<span class="position mb-2">1-12 Months</span>
-								<div class="faded">
-									<p></p>
-								</div>
-							</div>
-						</div>
-					</div>
+					{% endfor%}
 				</div>
 		</section>
 		<section class="ftco-section ftco-no-pt ftc-no-pb" id="abouts" style="background:#a0fc5a;">
+			<div class="row justify-content-center pb-2">
+				<div class="col-md-8 text-center heading-section ftco-animate">
+				  <h2 class="mt-5"><span>About Us</span></h2>
+				</div>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 order-md-last wrap-about py-5 wrap-about">
@@ -391,89 +241,20 @@ $(document).ready(function(){
 				</div>
 			</div>
 		</section>
-		<section class="ftco-section" id="Teachers">
-			<div class="container">
-				<div class="row justify-content-center mb-5 pb-2">
-          <div class="col-md-8 text-center heading-section ftco-animate">
-            <h2 class="mb-4"><span>Certified Teachers</span> </h2>
-            <p>“A man should hear a little music, read a little poetry, and see a fine picture every day of his life, in order that worldly cares may not obliterate the sense of the beautiful which God has implanted in the human soul.” ― Johann Wolfgang von Goethe</p>
-          </div>
-        </div>
-				<div class="row">
-					<div class="col-md-6 course d-lg-flex ftco-animate" >
-						<div class="img" style="border:5px solid #ff70a6; background-image: url({% static 'images/guitar.jpg' %});"></div>
-						<div class="text bg-light p-4" style="border:5px solid #ff70a6; border-left:none; box-shadow:1px 3px 10px 5px #ff70a6;">
-							<h3><a href="#">Guitar</a></h3>
-							<p class="subheading"><span>Duration:</span> 1 Month-12 Months</p>
-							<p>“A man should hear a little music, read a little poetry, and see a fine picture every day of his life, in order that worldly cares may not obliterate the sense of the beautiful which God has implanted in the human soul.” ― Johann Wolfgang von Goethe</p>
-						</div>
-					</div>
-					<div class="col-md-6 course d-lg-flex ftco-animate">
-						<div class="img" style="border:5px solid #ff70a6; background-image: url({% static 'images/djembe.jpg' %});"></div>
-						<div class="text bg-light p-4" style="border:5px solid #ff70a6; border-left:none;">
-							<h3><a href="#">Djembe</a></h3>
-							<p class="subheading"><span>Class time:</span> 9:00am - 10am</p>
-							<p>“When you make music or write or create, it’s really your job to have mind-blowing, irresponsible, condomless sex with whatever idea it is you’re writing about at the time. ” ― Lady Gaga</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="ftco-gallery ftco-no-pb"  id="gallery" style="background-color:#a0fc5a;">
+
+		<section class="ftco-gallery ftco-no-pb"  id="gallery">
 			<div class="row justify-content-center pb-2">
           <div class="col-md-8 text-center heading-section ftco-animate">
             <h2 class="mt-5"><span>Gallery</span></h2>
 		  </div>
 	 	<div class="thumbnail-slider">
 		<div class="thumbnail-container">
+			{% for gallery in gallery %}
 			<div class="does">
-				<a class="gallery image-popup img d-flex align-items-center" href="{% static 'images/singing1.jpg' %}" style="background-image: url({% static 'images/singing1.jpg' %});">
+				<a class="gallery image-popup img d-flex align-items-center" href="{{ gallery.img.url }}" style="background-image: url({{gallery.img.url}});">
 				</a>
 			</div>
-			<div class="does">
-				<a class="gallery image-popup img d-flex align-items-center" href="{% static 'images/boys.jpg' %}" style="background-image: url({% static 'images/boys.jpg' %});">
-				</a>
-			</div>
-			<div class="does">
-				<a class="gallery image-popup img d-flex align-items-center" href="{% static 'images/harmonium.jpg' %}" style="background-image: url({% static 'images/harmonium.jpg' %});">
-				</a>
-			</div>
-			<div class="does">
-				<a class="gallery image-popup img d-flex align-items-center" href="{% static 'images/guitar_boys.jpg' %}" style="background-image: url({% static 'images/guitar_boys.jpg' %});">
-				</a>
-			</div>
-			<div class="does">
-				<a class="gallery image-popup img d-flex align-items-center" href="{% static 'images/singing1.jpg' %}"  style="background-image: url({% static 'images/singing1.jpg' %});">
-				</a>
-			</div>
-			<div class="does">
-				<a class="gallery image-popup img d-flex align-items-center" href="{% static 'images/boys.jpg' %}" style="background-image: url({% static 'images/boys.jpg' %});">
-				</a>
-			</div>
-			<div class="does">
-				<a class="gallery image-popup img d-flex align-items-center" href="{% static 'images/singing1.jpg' %}" style="background-image: url({% static 'images/singing1.jpg' %});">
-				</a>
-			</div>
-			<div class="does">
-				<a class="gallery image-popup img d-flex align-items-center" href="{% static 'images/boys.jpg' %}" style="background-image: url({% static 'images/boys.jpg' %});">
-				</a>
-			</div>
-			<div class="does">
-				<a class="gallery image-popup img d-flex align-items-center" href="{% static 'images/harmonium.jpg' %}" style="background-image: url({% static 'images/harmonium.jpg' %});">
-				</a>
-			</div>
-			<div class="does">
-				<a class="gallery image-popup img d-flex align-items-center" href="{% static 'images/guitar_boys.jpg' %}" style="background-image: url({% static 'images/guitar_boys.jpg' %});">
-				</a>
-			</div>
-			<div class="does">
-				<a class="gallery image-popup img d-flex align-items-center" href="{% static 'images/singing1.jpg' %}"  style="background-image: url({% static 'images/singing1.jpg' %});">
-				</a>
-			</div>
-			<div class="does">
-				<a class="gallery image-popup img d-flex align-items-center" href="{% static 'images/boys.jpg' %}" style="background-image: url({% static 'images/boys.jpg' %});">
-				</a>
-			</div>
+			{% endfor %}
 		</div>
 
 	  <!-- controls slides -->
@@ -485,98 +266,44 @@ $(document).ready(function(){
 
    </div>
 		</section>
-    	<section class="ftco-section testimony-section" style="background-color:#f7f825;">
+    	<section class="ftco-section testimony-section" id="Testimony" style="background-color:#a0fc5a;">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 text-center heading-section ftco-animate">
-            <h2 ><span>What Students Says About Us</span></h2>
+            <h2 ><span>Testimony</span></h2>
             </div>
         </div>
         <div class="row ftco-animate justify-content-center">
           <div class="col-md-12">
             <div class="carousel-testimony owl-carousel">
+				{% for testi in testi %}
               <div class="item">
                 <div class="testimony-wrap d-flex">
-                  <!-- <div class="user-img mr-4" style="background-image: url({% static 'images/teacher-1.jpg' %})">
-                  </div> -->
+                  <div class="user-img mr-4" style="background-image: url({{ testi.img.url }})">
+                  </div>
                   <div class="text ml-2">
                   	<span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
-                    <p>“I think music in itself is healing. It’s an explosive expression of humanity. It’s something we are all touched by. No matter what culture we’re from, everyone loves music.” ― Billy Joel.</p>
-                    <p class="name">Racky Henderson</p>
-                    <span class="position">Student</span>
+                    <p>“ {{testi.feedback}} ”</p>
+                    <p class="name">{{ testi.name}}</p>
+                    <span class="position">{{testi.about}}</span>
                   </div>
                 </div>
               </div>
-              <div class="item">
-                <div class="testimony-wrap d-flex">
-                  <!-- <div class="user-img mr-4" style="background-image: url({% static 'images/teacher-2.jpg' %})">
-                  </div> -->
-                  <div class="text ml-2 ">
-                  	<span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                    <p>“I think music in itself is healing. It’s an explosive expression of humanity. It’s something we are all touched by. No matter what culture we’re from, everyone loves music.” ― Billy Joel.</p>
-                    <p class="name">Henry Dee</p>
-                    <span class="position">Student</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap d-flex">
-                  <!-- <div class="user-img mr-4" style="background-image: url({% static 'images/teacher-3.jpg' %})">
-                  </div> -->
-                  <div class="text ml-2 ">
-                  	<span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                    <p>“I think music in itself is healing. It’s an explosive expression of humanity. It’s something we are all touched by. No matter what culture we’re from, everyone loves music.” ― Billy Joel.</p>
-                    <p class="name">Mark Huff</p>
-                    <span class="position">Student</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap d-flex">
-                  <!-- <div class="user-img mr-4" style="background-image: url({% static 'images/teacher-4.jpg' %})">
-                  </div> -->
-                  <div class="text ml-2 ">
-                  	<span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                    <p>“I think music in itself is healing. It’s an explosive expression of humanity. It’s something we are all touched by. No matter what culture we’re from, everyone loves music.” ― Billy Joel.</p>
-                    <p class="name">Rodel Golez</p>
-                    <span class="position">Student</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap d-flex">
-                  <!-- <div class="user-img mr-4" style="background-image: url({% static 'images/teacher-1.jpg' %})">
-                  </div> -->
-                  <div class="text ml-2 ">
-                  	<span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                    <p>“I think music in itself is healing. It’s an explosive expression of humanity. It’s something we are all touched by. No matter what culture we’re from, everyone loves music.” ― Billy Joel.</p>
-                    <p class="name">Ken Bosh</p>
-                    <span class="position">Student</span>
-                  </div>
-                </div>
-              </div>
+			  {% endfor %}
             </div>
           </div>
         </div>
       </div>
     	</section>
-    	<section class="ftco-section ftco-consult ftco-no-pt ftco-no-pb" style="background-color:a0fc5a; background-image: url({% static 'images/Ravip.png' %});" data-stellar-background-ratio="0.5">
+    	<section class="ftco-section ftco-consult ftco-no-pt ftco-no-pb" id="Admission" style="background-color:#a0fc5a; background-image: url({% static 'images/Ravip.png' %});" data-stellar-background-ratio="0.5">
     	<div class="container" >
     		<div class="row justify-content-end">
-    			<div class="col-md-6 py-5 px-md-5" style="border:solid red 5px; background-color: #a0fc5a;">
+    			<div class="col-md-6 py-5 px-md-5" style="border:solid red 5px; background-color: #FFBF00;">
 	          <div class="heading-section heading-section-white ftco-animate mb-5" >
-	            <h2 class="mb-4" style="color:blue;">Admission Enquiry</h2>
-	            <p style="color:black;">“I think music in itself is healing. It’s an explosive expression of humanity. It’s something we are all touched by. No matter what culture we’re from, everyone loves music.” ― Billy Joel.</p>
+	            <h2 class="mb-4" style="text-align-last: center; color:blue;">Admission Enquiry</h2>
+	            <p style="text-align-last: center; color:black;">“You can call us at 860 5958 996, 897 5036 660 for further details Or” <br/> You can write us below, will call you back.</p>
 	          </div>
 	          <form action="#" class="appointment-form ftco-animate" >
 	    				<div class="d-md-flex">
@@ -620,7 +347,7 @@ $(document).ready(function(){
         </div>
     	</div>
     	</section>
-		<section class="ftco-section" id="Blog">
+		<section class="ftco-section" id="Blog" style="background-color: #a0fc5a;">
 			<div class="container" >
 				<div class="row justify-content-center mb-5 pb-2">
           <div class="col-md-8 text-center heading-section ftco-animate">
@@ -628,62 +355,29 @@ $(document).ready(function(){
             </div>
         </div>
 				<div class="row">
+					{% for blog in blog %}
           <div class="col-md-6 col-lg-4 ftco-animate">
             <div class="blog-entry">
-              <a href="#" class="block-20 d-flex align-items-end" style="background-image: url({% static 'images/harmonium.jpg' %});">
+			  <a href="#" class="block-20 d-flex align-items-end" style="background-image: url({{ blog.img.url }});">
 								<div class="meta-date text-center p-2">
-                  <span class="day">27</span>
-                  <span class="mos">January</span>
-                  <span class="yr">2019</span>
+                  <span class="mos">{{blog.date.month}}</span>
+                  <span class="day">{{blog.date.day}}</span>
+                  <span class="yr">{{blog.date.year}}</span>
                 </div>
               </a>
               <div class="text bg-white p-4">
-                <h3 class="heading"><a href="#">Skills To Develop Your Child Memory</a></h3>
-                <p>“I think music in itself is healing. It’s an explosive expression of humanity. It’s something we are all touched by. No matter what culture we’re from, everyone loves music.” ― Billy Joel.</p>
+                <h3 class="heading"><a href="#">{{ blog.title }}</a></h3>
+                <p> {{ blog.summary }}</p>
                 <div class="d-flex align-items-center mt-4">
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-6 col-lg-4 ftco-animate">
-            <div class="blog-entry">
-              <a href="#" class="block-20 d-flex align-items-end" style="background-image: url({% static 'images/boys.jpg' %});">
-								<div class="meta-date text-center p-2">
-                  <span class="day">27</span>
-                  <span class="mos">January</span>
-                  <span class="yr">2019</span>
-                </div>
-              </a>
-              <div class="text bg-white p-4">
-                <h3 class="heading"><a href="#">Skills To Develop Your Child Memory</a></h3>
-                <p>“I think music in itself is healing. It’s an explosive expression of humanity. It’s something we are all touched by. No matter what culture we’re from, everyone loves music.” ― Billy Joel.</p>
-                <div class="d-flex align-items-center mt-4">
-
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 ftco-animate">
-            <div class="blog-entry">
-              <a href="#" class="block-20 d-flex align-items-end" style="background-image: url({% static 'images/guitar_boys.jpg' %});">
-								<div class="meta-date text-center p-2">
-                  <span class="day">27</span>
-                  <span class="mos">January</span>
-                  <span class="yr">2019</span>
-                </div>
-              </a>
-              <div class="text bg-white p-4">
-                <h3 class="heading"><a href="#">Skills To Develop Your Child Memory</a></h3>
-                <p>“I think music in itself is healing. It’s an explosive expression of humanity. It’s something we are all touched by. No matter what culture we’re from, everyone loves music.” ― Billy Joel.</p>
-                <div class="d-flex align-items-center mt-4">
-                </div>
-              </div>
-            </div>
-          </div>
+		  </div>
+		  			{% endfor %}
         </div>
 			</div>
 		</section>
-    	<footer class="ftco-footer ftco-bg-dark ftco-section" style="background-color:#a0fc5a; border:double black 5px;">
+    	<footer class="ftco-footer ftco-bg-dark ftco-section" style="background-color:#FFBF00; border:double black 5px;">
       <div class="container" id="contact">
         <div class="row mb-5">
           <div class="col-md-6 col-lg-3">
